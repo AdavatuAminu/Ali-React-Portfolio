@@ -30,17 +30,17 @@ export default function Home({ setActiveSection }) {
         random: true
       },
       size: {
-        value: 3,
+        value: 8,
         random: true
       },
       move: {
         enable: true,
-        speed: 1,
+        speed: 2,
         direction: 'none',
         random: false,
         straight: false,
         out_mode: 'out',
-        bounce: false
+        bounce: true
       }
     },
     interactivity: {
@@ -269,7 +269,7 @@ export default function Home({ setActiveSection }) {
         />
         <div className="min-h-screen flex flex-col items-center justify-center text-center relative mt-10">
           <h1 className="text-5xl font-bold mb-4">Frontend Developer</h1>
-          <p className="text-lg mb-6">{`{ JavaScript, React, Next.js, Vue.js, MongoDB, CSS, Sass ... }`}</p>
+          <p className="text-lg mb-6">{`{ JavaScript, React, Next.js, Rails, MongoDB, CSS, Sass ... }`}</p>
           <p className="text-md max-w-md mb-8">
             Specializing in React & Next.js I leverage cutting-edge technologies to bring web projects to life.
           </p>

@@ -20,7 +20,7 @@ function Header({ darkMode, setDarkMode, activeSection, setActiveSection }) {
                 </div>
 
                 {/* Desktop Nav */}
-                <ul className="hidden md:flex gap-10 text-md font-medium">
+                <ul className="hidden md:flex gap-10 text-md font-medium mr-35">
                     {menuLinks.map((route) => (
                         <li key={route}>
                             <a

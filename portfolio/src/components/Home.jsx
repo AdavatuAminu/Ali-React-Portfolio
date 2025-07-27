@@ -103,40 +103,89 @@ export default function Home({ setActiveSection }) {
   const portfolioData = {
     frontend: [
       {
+        title: "Smart SEO Dashboard Website",
+        description: "Search engine optimization website built with React and smooth scrolling navigation",
+        image: "/frontend/front1.jpg",
+        liveLink: "https://smart-seo-dashboard.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/Smart-SEO-dashboard"
+      },
+      {
+        title: "Admin Dashboard",
+        description: "Admin dashboard with charts and CRUD features using React & Chart.js..",
+        image: "/frontend/front2.jpg",
+        liveLink: "https://belsoft-dashboard.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/belsoft-dashboard/tree/main"
+      },
+      {
         title: "E-Commerce Website",
         description: "React + Tailwind powered storefront with product filtering and cart features.",
-        image: "/project1.jpg",
-        liveLink: "https://your-live-link.com",
-        githubLink: "https://github.com/yourname/ecommerce-project"
+        image: "/frontend/front3.jpg",
+        liveLink: "https://breez-ecommerce.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/Breez-ecommerce"
       },
       {
-        title: "Portfolio Website",
-        description: "Personal portfolio built with React and smooth scrolling navigation.",
-        image: "/project2.jpg",
-        liveLink: "https://your-live-link.com",
-        githubLink: "https://github.com/yourname/portfolio-site"
+        title: "AI Job Match dashboard",
+        description: "Automatic job AI job search website.",
+        image: "/frontend/front4.jpg",
+        liveLink: "https://ai-powered-job-match-dashboard-swart.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/AI-Powered-Job-Match-Dashboard"
       },
       {
-        title: "Dashboard App",
-        description: "Admin dashboard with charts and CRUD features using React & Chart.js.",
-        image: "/project3.jpg",
-        liveLink: "https://your-live-link.com",
-        githubLink: "https://github.com/yourname/dashboard-app"
-      }
+        title: "Pokemon App",
+        description: "Clone and redesign of the popular pokemon app.",
+        image: "/frontend/front5.jpg",
+        liveLink: "https://aliyupokemonapp.netlify.app",
+        githubLink: "https://github.com/AdavatuAminu/pokemon"
+      },
+      {
+        title: "Calculator App",
+        description: "React built calculator for basic calculations.",
+        image: "/frontend/front6.jpg",
+        liveLink: "https://reactjs-calculator-v25q.onrender.com",
+        githubLink: "https://github.com/AdavatuAminu/ReactJS-calculator"
+      },
+      {
+        title: "My Dropbox App",
+        description: "Dropbox-clone app using React & AWS backend.",
+        image: "/frontend/front7.jpg",
+        liveLink: "https://my-dropbox-beryl.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/dropbox-clone"
+      },
+      {
+        title: "My Instagram App",
+        description: "Insagram-clone app using React & AWS backend.",
+        image: "/frontend/front8.jpg",
+        liveLink: "https://my-instagram-henna.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/Instagram-clone"
+      },
     ],
     uiux: [
       {
-        title: "Mobile App Prototype",
-        description: "Interactive Figma prototype for a task management mobile application.",
-        image: "/uiux1.jpg",
-        liveLink: "https://your-figma-link.com",
+        title: "Frostbite Mobile App Prototype",
+        description: "Interactive Adobe XD prototype for a online for order.",
+        image: "/UI/web1.jpg",
+        liveLink: "https://www.behance.net/aliyuaminu.com",
         githubLink: null
       },
       {
-        title: "Website Redesign",
+        title: "Global Routes Website Design",
+        description: "Complete UI/UX design for an Air transport service company.",
+        image: "/UI/web2.jpg",
+        liveLink: "https://www.behance.net/aliyuaminu.com",
+        githubLink: null
+      },
+      {
+        title: "Stay Health Inc Website Redesign",
         description: "Complete UI/UX redesign for a corporate website with user testing.",
-        image: "/uiux2.jpg",
-        liveLink: "https://your-figma-link.com",
+        image: "/UI/web3.jpg",
+        liveLink: "https://www.behance.net/aliyuaminu.com",
+        githubLink: null
+      },
+      {
+        title: "Need Help Web App",
+        description: "Interactive Figma prototype for a task management mobile application.",
+        image: "/UI/web4.jpg",
+        liveLink: "https://www.behance.net/aliyuaminu.com",
         githubLink: null
       }
     ],
@@ -144,17 +193,66 @@ export default function Home({ setActiveSection }) {
       {
         title: "Brand Identity",
         description: "Complete branding package including logo, business cards, and style guide.",
-        image: "/graphic1.jpg",
-        liveLink: "https://your-portfolio-link.com",
+        image: "/graphics/design1.jpg",
+        liveLink: "https://www.behance.net/aliyuaminu.com",
         githubLink: null
       },
       {
         title: "Marketing Materials",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphic2.jpg",
+        image: "/graphics/design2.jpg",
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
-      }
+      },
+      {
+        title: "Marketing Flyer",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design3.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Social Media Flyer",
+        description: "Complete branding package including logo, business cards, and style guide.",
+        image: "/graphics/design4.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Logo Design",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design5.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Product Branding",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design6.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Marketing Leaflets",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design7.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Graduation Flyer",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design8.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
+      {
+        title: "Banner Designs",
+        description: "Series of posters and social media graphics for product launch.",
+        image: "/graphics/design9.jpg",
+        liveLink: "https://your-portfolio-link.com",
+        githubLink: null
+      },
     ]
   };
 

@@ -5,6 +5,7 @@ import { loadSlim } from 'tsparticles-slim';
 export default function Home({ setActiveSection }) {
   const [activeCategory, setActiveCategory] = useState('frontend');
   const [showMore, setShowMore] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -194,68 +195,99 @@ export default function Home({ setActiveSection }) {
       {
         title: "Brand Identity",
         description: "Complete branding package including logo, business cards, and style guide.",
-        image: "/graphics/design1.jpg",
+        images: ["/graphics/design1.jpg", "/graphics/design2.jpg", "/graphics/design3.jpg"],
         liveLink: "https://www.behance.net/aliyuaminu.com",
         githubLink: null
       },
       {
         title: "Marketing Materials",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design2.jpg",
+        images: ["/graphics/design2.jpg", "/mock/graphic5.jpg", "/mock/graphic6.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Marketing Flyer",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design3.jpg",
+        images: ["/graphics/design3.jpg", "/mock/graphic8.jpg", "/mock/graphic9.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Social Media Flyer",
         description: "Complete branding package including logo, business cards, and style guide.",
-        image: "/graphics/design4.jpg",
+        images: ["/graphics/design4.jpg", "/mock/graphic11.jpg", "/mock/graphic12.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Logo Design",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design5.jpg",
+        images: ["/graphics/design5.jpg", "/mock/graphic14.jpg", "/mock/graphic15.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Product Branding",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design6.jpg",
+        images: ["/graphics/design6.jpg", "/mock/graphic17.jpg", "/mock/graphic18.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Marketing Leaflets",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design7.jpg",
+        images: ["/graphics/design7.jpg", "/mock/graphic20.jpg", "/mock/graphic21.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Graduation Flyer",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design8.jpg",
+        images: ["/graphics/design8.jpg", "/mock/graphic23.jpg", "/mock/graphic24.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
       {
         title: "Banner Designs",
         description: "Series of posters and social media graphics for product launch.",
-        image: "/graphics/design9.jpg",
+        images: ["/graphics/design9.jpg", "/mock/graphic26.jpg", "/mock/graphic27.jpg"],
         liveLink: "https://your-portfolio-link.com",
         githubLink: null
       },
     ]
   };
+
+  const handleImageClick = (index) => {
+    setSelectedImageIndex(index);
+  };
+
+  const handleClosePopup = () => {
+    setSelectedImageIndex(null);
+  };
+
+  const handleSwipe = (direction) => {
+    if (selectedImageIndex !== null) {
+      const graphicData = portfolioData.graphic;
+      const newIndex = selectedImageIndex + direction;
+      if (newIndex >= 0 && newIndex < graphicData.length) {
+        setSelectedImageIndex(newIndex);
+      }
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (selectedImageIndex !== null) {
+      if (e.key === 'ArrowLeft') handleSwipe(-1);
+      if (e.key === 'ArrowRight') handleSwipe(1);
+      if (e.key === 'Escape') handleClosePopup();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImageIndex]);
 
   return (
     <div className="px-6">
@@ -300,7 +332,6 @@ export default function Home({ setActiveSection }) {
             className="w-4/4 sm:w-2/3 md:w-1/2 opacity-80"
           />
         </div>
-
       </section>
 
       {/* About Section */}
@@ -420,7 +451,6 @@ export default function Home({ setActiveSection }) {
             <p>Skilled in multiple Adobe tools for creative and UI design workflows.</p>
           </div>
         </div>
-
       </section>
 
       {/* Portfolio Section */}
@@ -452,7 +482,12 @@ export default function Home({ setActiveSection }) {
         <div className="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioData[activeCategory].slice(0, showMore ? undefined : (window.innerWidth >= 1024 ? 3 : 4)).map((project, index) => (
             <div key={index} className="shadow-lg hover:shadow-lg transition overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+              <img
+                src={project.image || project.images?.[0]}
+                alt={project.title}
+                className="w-full h-48 object-cover cursor-pointer"
+                onClick={() => activeCategory === 'graphic' ? handleImageClick(index) : null}
+              />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm mb-2">{project.description}</p>
@@ -479,6 +514,33 @@ export default function Home({ setActiveSection }) {
               className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500"
             >
               See More
+            </button>
+          </div>
+        )}
+        {selectedImageIndex !== null && activeCategory === 'graphic' && (
+          <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+            <button
+              className="absolute top-4 right-4 text-white text-2xl"
+              onClick={handleClosePopup}
+            >
+              &times;
+            </button>
+            <button
+              className="absolute left-4 text-white text-4xl"
+              onClick={() => handleSwipe(-1)}
+            >
+              &#10094;
+            </button>
+            <img
+              src={portfolioData.graphic[selectedImageIndex].images[0]}
+              alt={portfolioData.graphic[selectedImageIndex].title}
+              className="max-w-full max-h-full"
+            />
+            <button
+              className="absolute right-4 text-white text-4xl"
+              onClick={() => handleSwipe(1)}
+            >
+              &#10095;
             </button>
           </div>
         )}

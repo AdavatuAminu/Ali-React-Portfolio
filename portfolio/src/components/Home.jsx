@@ -349,6 +349,101 @@ export default function Home({ setActiveSection }) {
         <p className="mt-4 text-lg leading-relaxed">
           I hold a degree in Urban and Regional Planning from the Federal University of Technology, Minna. Driven by a growing passion for technology, I have since earned certifications in <strong>Frontend Development</strong>, <strong>Software Engineering</strong>, <strong>Graphic Design</strong>, and <strong>UI/UX Design</strong>.
         </p>
+        <div className="w-full flex flex-col items-center border-b-2 border-gray-300 mt-10 mb-10"></div>
+        <h1 className="font-bold text-center text-2xl">TOOLS AND FRAMEWORKS</h1>
+
+        <div className="mt-[20px] px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left text-inherit dark:text-gray-200">
+          {/* JavaScript */}
+          <div className="flex flex-col items-start">
+            <img src="/js.png" alt="JavaScript" className="w-8 h-8 mb-2" />
+            <h3 className="font-semibold text-lg">JavaScript</h3>
+            <p>Proficient in writing modern JavaScript for building interactive web apps.</p>
+          </div>
+
+          {/* Ruby on Rails */}
+          <div className="flex flex-col items-start">
+            <img src="/ruby.png" alt="Ruby" className="w-15 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Ruby on Rails</h3>
+            <p>Experience in building full-stack apps with Rails and RESTful APIs.</p>
+          </div>
+
+          {/* Git */}
+          <div className="flex flex-col items-start">
+            <img src="/git.png" alt="Git" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Git</h3>
+            <p>Version control expertise for team collaboration and code tracking.</p>
+          </div>
+
+          {/* React */}
+          <div className="flex flex-col items-start">
+            <img src="/react.png" alt="React" className="w-8 h-8 mb-2" />
+            <h3 className="font-semibold text-lg">React</h3>
+            <p>Developing dynamic user interfaces and SPAs using React.</p>
+          </div>
+
+          {/* Next.js */}
+          <div className="flex flex-col items-start">
+            <img src="/next.png" alt="Next.js" className="w-8 h-8 mb-2" />
+            <h3 className="font-semibold text-lg">Next.js</h3>
+            <p>Building SEO-friendly and performant React apps with server-side rendering.</p>
+          </div>
+
+          {/* AWS Amplify */}
+          <div className="flex flex-col items-start">
+            <img src="/aws.png" alt="AWS" className="w-8 h-8 mb-2" />
+            <h3 className="font-semibold text-lg">AWS Amplify</h3>
+            <p>Integrating cloud features like authentication and storage into web apps.</p>
+          </div>
+
+          {/* Tailwind CSS */}
+          <div className="flex flex-col items-start">
+            <img src="/tailwind.png" alt="Tailwind CSS" className="w-20 h-4 mb-2" />
+            <h3 className="font-semibold text-lg">Tailwind CSS</h3>
+            <p>Styling responsive UIs efficiently using a utility-first CSS framework.</p>
+          </div>
+
+          {/* CSS & Sass */}
+          <div className="flex flex-col items-start">
+            <img src="/css.png" alt="CSS & Sass" className="w-8 h-8 mb-2" />
+            <h3 className="font-semibold text-lg">CSS & Sass</h3>
+            <p>Creating modular and maintainable styles using modern CSS & Sass.</p>
+          </div>
+
+          {/* Bootstrap */}
+          <div className="flex flex-col items-start">
+            <img src="/bootstrap.png" alt="Bootstrap" className="w-25 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Bootstrap</h3>
+            <p>Rapid prototyping and layout design using Bootstrap's component library.</p>
+          </div>
+
+          {/* Adobe Illustrator */}
+          <div className="flex flex-col items-start">
+            <img src="/AdobeIllustrator.png" alt="Adobe Illustrator" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Adobe Illustrator</h3>
+            <p>Designing vector graphics and UI assets for digital products.</p>
+          </div>
+
+          {/* Figma */}
+          <div className="flex flex-col items-start">
+            <img src="/figma.png" alt="Figma" className="w-12 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Figma</h3>
+            <p>Designing and prototyping responsive interfaces collaboratively.</p>
+          </div>
+
+          {/* Photoshop */}
+          <div className="flex flex-col items-start">
+            <img src="/Photoshop.png" alt="Photoshop" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Photoshop</h3>
+            <p>Editing and creating pixel-perfect designs and mockups.</p>
+          </div>
+
+          {/* Adobe */}
+          <div className="flex flex-col items-start">
+            <img src="/adobe.png" alt="Adobe" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Adobe Suite</h3>
+            <p>Skilled in multiple Adobe tools for creative and UI design workflows.</p>
+          </div>
+        </div>
       </section>
 
       {/* Portfolio Section */}

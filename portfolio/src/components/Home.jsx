@@ -337,16 +337,22 @@ export default function Home({ setActiveSection }) {
       {/* About Section */}
       <section id="about" className="min-h-screen px-6 py-12 max-w-6xl mx-auto text-inherit text-justify">
         <div className="w-full flex flex-col items-center border-b-2 border-gray-300 mt-1 mb-1"></div>
-        <p className="text-lg leading-relaxed mt-10">
-          Hi, I’m <span className="font-semibold text-indigo-600">Aliyu Aminu Adavatu</span> — a passionate Frontend Developer based in Kaduna, Nigeria.
-          My journey into tech began with a strong curiosity for building things that people interact with daily.
-        </p>
-        <p className="mt-4 text-lg leading-relaxed">
-          I specialize in creating intuitive and responsive web interfaces using technologies like <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>. With a strong foundation in <strong>UI/UX design</strong> and <strong>graphic design</strong>, I focus on building products that are not just functional but also visually compelling and user-centric.
-        </p>
-        <p className="mt-4 text-lg leading-relaxed">
-          Over the past few months, I’ve worked as an intern, volunteer, and freelancer—contributing to multiple frontend projects and collaborating with cross-functional teams. I enjoy solving real-world problems, enhancing user experiences, and constantly exploring new tools and design systems to stay ahead in the fast-paced web ecosystem.
-        </p>
+
+        {/* Image + First Paragraph Wrapper */}
+        <div className="flex flex-col md:flex-row md:items-start md:gap-8 mt-15">
+          <img
+            src="./Aliyu2.png"
+            alt="Profile pic"
+            className="w-full sm:w-2/3 md:w-1/4 border rounded-xl bg-gray-800 mb-5 md:mb-0"
+          />
+          <p className="text-lg leading-relaxed">
+            Hi, I’m <span className="font-semibold text-indigo-600">Aliyu Aminu Adavatu</span> — a passionate Frontend Developer based in Kaduna, Nigeria.
+            My journey into tech began with a strong curiosity for building things that people interact with daily.
+            I specialize in creating intuitive and responsive web interfaces using technologies like <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>. With a strong foundation in <strong>UI/UX design</strong> and <strong>graphic design</strong>, I focus on building products that are not just functional but also visually compelling and user-centric.
+            Over the past few months, I’ve worked as an intern, volunteer, and freelancer—contributing to multiple frontend projects and collaborating with cross-functional teams. I enjoy solving real-world problems, enhancing user experiences, and constantly exploring new tools and design systems to stay ahead in the fast-paced web ecosystem.
+          </p>
+        </div>
+        {/* Remaining Paragraphs */}
         <p className="mt-4 text-lg leading-relaxed">
           In addition to frontend development, I have hands-on experience in creating branding materials, layouts, and visual assets using tools like <strong>Figma</strong> and <strong>Adobe Creative Suite</strong>. This creative background enhances my approach to building clean and consistent UI components.
         </p>
@@ -356,105 +362,10 @@ export default function Home({ setActiveSection }) {
         <p className="mt-4 text-lg leading-relaxed">
           I hold a degree in Urban and Regional Planning from the Federal University of Technology, Minna. Driven by a growing passion for technology, I have since earned certifications in <strong>Frontend Development</strong>, <strong>Software Engineering</strong>, <strong>Graphic Design</strong>, and <strong>UI/UX Design</strong>.
         </p>
-        <div className="w-full flex flex-col items-center border-b-2 border-gray-300 mt-10 mb-10"></div>
-        <h1 className="font-bold text-center text-2xl">TOOLS AND FRAMEWORKS</h1>
+      </section >
 
-        <div className="mt-[20px] px-4 w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left text-inherit dark:text-gray-200">
-          {/* JavaScript */}
-          <div className="flex flex-col items-start">
-            <img src="/js.png" alt="JavaScript" className="w-8 h-8 mb-2" />
-            <h3 className="font-semibold text-lg">JavaScript</h3>
-            <p>Proficient in writing modern JavaScript for building interactive web apps.</p>
-          </div>
-
-          {/* Ruby on Rails */}
-          <div className="flex flex-col items-start">
-            <img src="/ruby.png" alt="Ruby" className="w-15 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Ruby on Rails</h3>
-            <p>Experience in building full-stack apps with Rails and RESTful APIs.</p>
-          </div>
-
-          {/* Git */}
-          <div className="flex flex-col items-start">
-            <img src="/git.png" alt="Git" className="w-10 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Git</h3>
-            <p>Version control expertise for team collaboration and code tracking.</p>
-          </div>
-
-          {/* React */}
-          <div className="flex flex-col items-start">
-            <img src="/react.png" alt="React" className="w-8 h-8 mb-2" />
-            <h3 className="font-semibold text-lg">React</h3>
-            <p>Developing dynamic user interfaces and SPAs using React.</p>
-          </div>
-
-          {/* Next.js */}
-          <div className="flex flex-col items-start">
-            <img src="/next.png" alt="Next.js" className="w-8 h-8 mb-2" />
-            <h3 className="font-semibold text-lg">Next.js</h3>
-            <p>Building SEO-friendly and performant React apps with server-side rendering.</p>
-          </div>
-
-          {/* AWS Amplify */}
-          <div className="flex flex-col items-start">
-            <img src="/aws.png" alt="AWS" className="w-8 h-8 mb-2" />
-            <h3 className="font-semibold text-lg">AWS Amplify</h3>
-            <p>Integrating cloud features like authentication and storage into web apps.</p>
-          </div>
-
-          {/* Tailwind CSS */}
-          <div className="flex flex-col items-start">
-            <img src="/tailwind.png" alt="Tailwind CSS" className="w-20 h-4 mb-2" />
-            <h3 className="font-semibold text-lg">Tailwind CSS</h3>
-            <p>Styling responsive UIs efficiently using a utility-first CSS framework.</p>
-          </div>
-
-          {/* CSS & Sass */}
-          <div className="flex flex-col items-start">
-            <img src="/css.png" alt="CSS & Sass" className="w-8 h-8 mb-2" />
-            <h3 className="font-semibold text-lg">CSS & Sass</h3>
-            <p>Creating modular and maintainable styles using modern CSS & Sass.</p>
-          </div>
-
-          {/* Bootstrap */}
-          <div className="flex flex-col items-start">
-            <img src="/bootstrap.png" alt="Bootstrap" className="w-25 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Bootstrap</h3>
-            <p>Rapid prototyping and layout design using Bootstrap's component library.</p>
-          </div>
-
-          {/* Adobe Illustrator */}
-          <div className="flex flex-col items-start">
-            <img src="/AdobeIllustrator.png" alt="Adobe Illustrator" className="w-10 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Adobe Illustrator</h3>
-            <p>Designing vector graphics and UI assets for digital products.</p>
-          </div>
-
-          {/* Figma */}
-          <div className="flex flex-col items-start">
-            <img src="/figma.png" alt="Figma" className="w-12 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Figma</h3>
-            <p>Designing and prototyping responsive interfaces collaboratively.</p>
-          </div>
-
-          {/* Photoshop */}
-          <div className="flex flex-col items-start">
-            <img src="/Photoshop.png" alt="Photoshop" className="w-10 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Photoshop</h3>
-            <p>Editing and creating pixel-perfect designs and mockups.</p>
-          </div>
-
-          {/* Adobe */}
-          <div className="flex flex-col items-start">
-            <img src="/adobe.png" alt="Adobe" className="w-10 h-10 mb-2" />
-            <h3 className="font-semibold text-lg">Adobe Suite</h3>
-            <p>Skilled in multiple Adobe tools for creative and UI design workflows.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Section */}
-      <section id="portfolio" className="min-h-screen py-25 max-w-7xl mx-auto">
+    {/* Portfolio Section */ }
+    < section id = "portfolio" className = "min-h-screen py-25 max-w-7xl mx-auto" >
         <h1 className="text-5xl font-bold mb-2 text-center">Portfolio Projects</h1>
         <h2 className="text-[15px] font-normal mb-6 text-center">From Frontend dev to website & graphic designs</h2>
         <div className="flex justify-center mb-8">
@@ -507,47 +418,51 @@ export default function Home({ setActiveSection }) {
             </div>
           ))}
         </div>
-        {portfolioData[activeCategory].length > (window.innerWidth >= 1024 ? 3 : 4) && !showMore && (
-          <div className="text-center mt-8">
-            <button
-              onClick={() => setShowMore(true)}
-              className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500"
-            >
-              See More
-            </button>
-          </div>
-        )}
-        {selectedImageIndex !== null && activeCategory === 'graphic' && (
-          <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-            <button
-              className="absolute top-4 right-4 text-white text-2xl"
-              onClick={handleClosePopup}
-            >
-              &times;
-            </button>
-            <button
-              className="absolute left-4 text-white text-4xl"
-              onClick={() => handleSwipe(-1)}
-            >
-              &#10094;
-            </button>
-            <img
-              src={portfolioData.graphic[selectedImageIndex].images[0]}
-              alt={portfolioData.graphic[selectedImageIndex].title}
-              className="max-w-full max-h-full"
-            />
-            <button
-              className="absolute right-4 text-white text-4xl"
-              onClick={() => handleSwipe(1)}
-            >
-              &#10095;
-            </button>
-          </div>
-        )}
-      </section>
+  {
+    portfolioData[activeCategory].length > (window.innerWidth >= 1024 ? 3 : 4) && !showMore && (
+      <div className="text-center mt-8">
+        <button
+          onClick={() => setShowMore(true)}
+          className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500"
+        >
+          See More
+        </button>
+      </div>
+    )
+  }
+  {
+    selectedImageIndex !== null && activeCategory === 'graphic' && (
+      <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <button
+          className="absolute top-4 right-4 text-white text-2xl"
+          onClick={handleClosePopup}
+        >
+          &times;
+        </button>
+        <button
+          className="absolute left-4 text-white text-4xl"
+          onClick={() => handleSwipe(-1)}
+        >
+          &#10094;
+        </button>
+        <img
+          src={portfolioData.graphic[selectedImageIndex].images[0]}
+          alt={portfolioData.graphic[selectedImageIndex].title}
+          className="max-w-full max-h-full"
+        />
+        <button
+          className="absolute right-4 text-white text-4xl"
+          onClick={() => handleSwipe(1)}
+        >
+          &#10095;
+        </button>
+      </div>
+    )
+  }
+      </section >
 
-      {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-25 max-w-xl mx-auto text-center">
+    {/* Contact Section */ }
+    < section id = "contact" className = "min-h-screen py-25 max-w-xl mx-auto text-center" >
         <h2 className="text-3xl font-bold mb-6">Get in touch</h2>
         <p className="mb-4">I'm always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. Feel free to book a call or email me if you'd like to see my portfolio deck or to discuss a potential project.</p>
         <form className="space-y-4">
@@ -563,7 +478,7 @@ export default function Home({ setActiveSection }) {
           <a href="https://linkedin.com/in/aliyu-aminu-adavatu" target="_blank" rel="noopener noreferrer"><img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6" /></a>
           <a href="https://x.com/AliyuAminu_dev" target="_blank" rel="noopener noreferrer"><img src="/x.png" alt="X" className="w-6 h-6" /></a>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }

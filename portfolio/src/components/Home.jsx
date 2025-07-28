@@ -30,12 +30,12 @@ export default function Home({ setActiveSection }) {
         random: true
       },
       size: {
-        value: 8,
+        value: 5,
         random: true
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 1,
         direction: 'none',
         random: false,
         straight: false,
@@ -267,22 +267,40 @@ export default function Home({ setActiveSection }) {
           options={particlesConfig}
           className="absolute inset-0 z-0"
         />
-        <div className="min-h-screen flex flex-col items-center justify-center text-center relative mt-10">
-          <h1 className="text-5xl font-bold mb-4">Frontend Developer</h1>
-          <p className="text-lg mb-6">{`{ JavaScript, React, Next.js, Rails, MongoDB, CSS, Sass ... }`}</p>
-          <p className="text-md max-w-md mb-8">
+        <div className="min-h-screen flex flex-col items-center justify-center text-center relative mt-1 md:mt-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 md:mb-4">Frontend Developer</h1>
+          <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">UI/UX and Graphic Designer</h2>
+          <p className="text-base md:text-lg mb-4 md:mb-6">
+            {`{ JavaScript, React, Next.js, Rails, MongoDB, CSS, Sass ... }`}
+          </p>
+          <p className="text-sm md:text-md max-w-md mb-6 md:mb-8">
             Specializing in React & Next.js I leverage cutting-edge technologies to bring web projects to life.
           </p>
-          <div className="flex gap-4 mb-12">
-            <button onClick={scrollToPortfolio} className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500">
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 md:mb-12">
+            <button
+              onClick={scrollToPortfolio}
+              className="px-4 py-2 sm:px-6 sm:py-3 bg-blue-700 rounded-full text-white text-sm sm:text-base hover:bg-orange-500"
+            >
               See my dev work
             </button>
-            <a href="/AliyuAminuAdavatuCV.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-blue-500 hover:underline">
+            <a
+              href="/AliyuAminuAdavatuCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 sm:px-6 sm:py-3 text-blue-500 text-sm sm:text-base hover:underline"
+            >
               Download CV
             </a>
           </div>
-          <img src="/KeyboardMouse.png" alt="Keyboard and Mouse" className="w-1/2 opacity-50" />
+
+          <img
+            src="/KeyboardMouse.png"
+            alt="Keyboard and Mouse"
+            className="w-4/4 sm:w-2/3 md:w-1/2 opacity-80"
+          />
         </div>
+
       </section>
 
       {/* About Section */}
@@ -315,65 +333,94 @@ export default function Home({ setActiveSection }) {
           <div className="flex flex-col items-start">
             <img src="/js.png" alt="JavaScript" className="w-8 h-8 mb-2" />
             <h3 className="font-semibold text-lg">JavaScript</h3>
-            <p>Strong JS knowledge and advanced web development.</p>
+            <p>Proficient in writing modern JavaScript for building interactive web apps.</p>
           </div>
 
-          {/* Ruby */}
+          {/* Ruby on Rails */}
           <div className="flex flex-col items-start">
             <img src="/ruby.png" alt="Ruby" className="w-15 h-10 mb-2" />
             <h3 className="font-semibold text-lg">Ruby on Rails</h3>
-            <p>Using MongoDB for scalable databases on the backend.</p>
+            <p>Experience in building full-stack apps with Rails and RESTful APIs.</p>
           </div>
 
           {/* Git */}
           <div className="flex flex-col items-start">
             <img src="/git.png" alt="Git" className="w-10 h-10 mb-2" />
             <h3 className="font-semibold text-lg">Git</h3>
-            <p>DevOps tool for streamlined source code management.</p>
+            <p>Version control expertise for team collaboration and code tracking.</p>
           </div>
 
           {/* React */}
           <div className="flex flex-col items-start">
             <img src="/react.png" alt="React" className="w-8 h-8 mb-2" />
             <h3 className="font-semibold text-lg">React</h3>
-            <p>Building fast and efficient React Apps and websites.</p>
+            <p>Developing dynamic user interfaces and SPAs using React.</p>
           </div>
 
           {/* Next.js */}
           <div className="flex flex-col items-start">
             <img src="/next.png" alt="Next.js" className="w-8 h-8 mb-2" />
             <h3 className="font-semibold text-lg">Next.js</h3>
-            <p>Fast server-side rendering, dynamic routing & less code.</p>
+            <p>Building SEO-friendly and performant React apps with server-side rendering.</p>
           </div>
 
-          {/* Aws */}
+          {/* AWS Amplify */}
           <div className="flex flex-col items-start">
             <img src="/aws.png" alt="AWS" className="w-8 h-8 mb-2" />
             <h3 className="font-semibold text-lg">AWS Amplify</h3>
-            <p>I build web interfaces & one-page applications using Vue.</p>
+            <p>Integrating cloud features like authentication and storage into web apps.</p>
           </div>
 
           {/* Tailwind CSS */}
           <div className="flex flex-col items-start">
             <img src="/tailwind.png" alt="Tailwind CSS" className="w-20 h-4 mb-2" />
             <h3 className="font-semibold text-lg">Tailwind CSS</h3>
-            <p>A utility-first widely used frontend CSS framework.</p>
+            <p>Styling responsive UIs efficiently using a utility-first CSS framework.</p>
           </div>
 
           {/* CSS & Sass */}
           <div className="flex flex-col items-start">
             <img src="/css.png" alt="CSS & Sass" className="w-8 h-8 mb-2" />
             <h3 className="font-semibold text-lg">CSS & Sass</h3>
-            <p>I use Sass as my preferred CSS pre-processor.</p>
+            <p>Creating modular and maintainable styles using modern CSS & Sass.</p>
           </div>
 
           {/* Bootstrap */}
           <div className="flex flex-col items-start">
             <img src="/bootstrap.png" alt="Bootstrap" className="w-25 h-10 mb-2" />
             <h3 className="font-semibold text-lg">Bootstrap</h3>
-            <p>I use Sass as my preferred CSS pre-processor.</p>
+            <p>Rapid prototyping and layout design using Bootstrap's component library.</p>
+          </div>
+
+          {/* Adobe Illustrator */}
+          <div className="flex flex-col items-start">
+            <img src="/AdobeIllustrator.png" alt="Adobe Illustrator" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Adobe Illustrator</h3>
+            <p>Designing vector graphics and UI assets for digital products.</p>
+          </div>
+
+          {/* Figma */}
+          <div className="flex flex-col items-start">
+            <img src="/figma.png" alt="Figma" className="w-12 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Figma</h3>
+            <p>Designing and prototyping responsive interfaces collaboratively.</p>
+          </div>
+
+          {/* Photoshop */}
+          <div className="flex flex-col items-start">
+            <img src="/Photoshop.png" alt="Photoshop" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Photoshop</h3>
+            <p>Editing and creating pixel-perfect designs and mockups.</p>
+          </div>
+
+          {/* Adobe */}
+          <div className="flex flex-col items-start">
+            <img src="/adobe.png" alt="Adobe" className="w-10 h-10 mb-2" />
+            <h3 className="font-semibold text-lg">Adobe Suite</h3>
+            <p>Skilled in multiple Adobe tools for creative and UI design workflows.</p>
           </div>
         </div>
+
       </section>
 
       {/* Portfolio Section */}

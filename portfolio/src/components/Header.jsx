@@ -55,8 +55,21 @@ function Header({ darkMode, setDarkMode, activeSection, setActiveSection }) {
                 <Menu className="md:hidden h-8 w-8 cursor-pointer" onClick={() => setIsMobileMenuOpen(true)} />
             </nav>
 
+            {/* Overlay (click to close menu) */}
+            {isMobileMenuOpen && (
+                <div
+                    className="fixed inset-0 bg-black/30 backdrop-blur-xsm z-40 md:hidden"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                ></div>
+            )}
+
             {/* Mobile Menu */}
-            <div className={`fixed top-0 right-0 h-full w-64 bg-inherit dark:bg-black shadow-md z-50 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div
+                className={`fixed top-0 right-0 h-full w-64 bg-inherit dark:bg-black shadow-md z-50 transform transition-transform duration-300 ${
+                    isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                }`}
+                onClick={(e) => e.stopPropagation()}
+            >
                 <div className="p-6">
                     <button className="mb-6" onClick={() => setIsMobileMenuOpen(false)}>
                         <X className="h-6 w-6" />

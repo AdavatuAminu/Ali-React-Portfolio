@@ -6,6 +6,7 @@ export default function Home({ setActiveSection }) {
   const [activeCategory, setActiveCategory] = useState('frontend');
   const [showMore, setShowMore] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -166,93 +167,79 @@ export default function Home({ setActiveSection }) {
         title: "Frostbite Mobile App Prototype",
         description: "Interactive Adobe XD prototype for a online for order.",
         image: "/UI/web1.jpg",
-        liveLink: "https://www.behance.net/aliyuaminu.com",
+        liveLink: "https://www.behance.net/aliyuaminu",
         githubLink: null
       },
       {
         title: "Global Routes Website Design",
         description: "Complete UI/UX design for an Air transport service company.",
         image: "/UI/web2.jpg",
-        liveLink: "https://www.behance.net/aliyuaminu.com",
+        liveLink: "https://www.behance.net/aliyuaminu",
         githubLink: null
       },
       {
         title: "Stay Health Inc Website Redesign",
         description: "Complete UI/UX redesign for a corporate website with user testing.",
         image: "/UI/web3.jpg",
-        liveLink: "https://www.behance.net/aliyuaminu.com",
+        liveLink: "https://www.behance.net/aliyuaminu",
         githubLink: null
       },
       {
         title: "Need Help Web App",
         description: "Interactive Figma prototype for a task management mobile application.",
         image: "/UI/web4.jpg",
-        liveLink: "https://www.behance.net/aliyuaminu.com",
+        liveLink: "https://www.behance.net/aliyuaminu",
         githubLink: null
       }
     ],
     graphic: [
       {
         title: "Brand Identity",
-        description: "Complete branding package including logo, business cards, and style guide.",
-        images: ["/graphics/design1.jpg", "/graphics/design2.jpg", "/graphics/design3.jpg"],
-        liveLink: "https://www.behance.net/aliyuaminu.com",
+        description: "Crafted a cohesive brand identity including logo, business cards, and a complete style guide.",
+        images: ["/graphics/design1.jpg", "/graphics/design1-2.jpg", "/graphics/design1-3.jpg", "/graphics/design1-4.jpg", "/graphics/design1-5.jpg", "/graphics/design1-6.jpg", "/graphics/design1-7.jpg", "/graphics/design1-8.jpg", "/graphics/design1-9.jpg", "/graphics/design1-10.jpg", "/graphics/design1-11.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Marketing Materials",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design2.jpg", "/mock/graphic5.jpg", "/mock/graphic6.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Designed a variety of promotional materials including posters and social media content for a product launch campaign.",
+        images: ["/graphics/design2.jpg", "/graphics/design2-2.jpg", "/graphics/design2-3.jpg", "/graphics/design2-4.jpg", "/graphics/design2-5.jpg", "/graphics/design2-6.jpg", "/graphics/design2-7.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Marketing Flyer",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design3.jpg", "/mock/graphic8.jpg", "/mock/graphic9.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Created visually compelling marketing flyers to support campaigns and promotions.",
+        images: ["/graphics/design3.jpg", "/graphics/design3-2.jpg", "/graphics/design3-3.jpg", "/graphics/design3-4.jpg", "/graphics/design3-5.jpg", "/graphics/design3-6.jpg", "/graphics/design3-7.jpg", "/graphics/design3-8.jpg", "/graphics/design3-9.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Social Media Flyer",
-        description: "Complete branding package including logo, business cards, and style guide.",
-        images: ["/graphics/design4.jpg", "/mock/graphic11.jpg", "/mock/graphic12.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Developed flyers optimized for various social media platforms, ensuring brand consistency and engagement.",
+        images: ["/graphics/design4.jpg", "/graphics/design4-2.jpg", "/graphics/design4-3.jpg", "/graphics/design4-4.jpg", "/graphics/design4-5.jpg", "/graphics/design4-6.jpg", "/graphics/design4-7.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Logo Design",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design5.jpg", "/mock/graphic14.jpg", "/mock/graphic15.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Designed unique and memorable logos tailored to reflect each brand’s identity and vision.",
+        images: ["/graphics/design5.jpg", "/graphics/design5-2.jpg", "/graphics/design5-3.jpg", "/graphics/design5-4.jpg", "/graphics/design5-5.jpg", "/graphics/design5-6.jpg", "/graphics/design5-7.jpg", "/graphics/design5-8.jpg", "/graphics/design5-9.jpg", "/graphics/design5-10.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Product Branding",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design6.jpg", "/mock/graphic17.jpg", "/mock/graphic18.jpg"],
-        liveLink: "https://your-portfolio-link.com",
-        githubLink: null
-      },
-      {
-        title: "Marketing Leaflets",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design7.jpg", "/mock/graphic20.jpg", "/mock/graphic21.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Developed branding assets for new products, including packaging, labels, and promotional graphics.",
+        images: ["/graphics/design6.jpg", "/graphics/design6-2.jpg", "/graphics/design6-3.jpg"],
+        liveLink: null,
         githubLink: null
       },
       {
         title: "Graduation Flyer",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design8.jpg", "/mock/graphic23.jpg", "/mock/graphic24.jpg"],
-        liveLink: "https://your-portfolio-link.com",
-        githubLink: null
-      },
-      {
-        title: "Banner Designs",
-        description: "Series of posters and social media graphics for product launch.",
-        images: ["/graphics/design9.jpg", "/mock/graphic26.jpg", "/mock/graphic27.jpg"],
-        liveLink: "https://your-portfolio-link.com",
+        description: "Designed elegant and celebratory flyers for graduation events, highlighting individuals and achievements.",
+        images: ["/graphics/design7.jpg", "/graphics/design7-2.jpg", "/graphics/design7-3.jpg"],
+        liveLink: null,
         githubLink: null
       },
     ]
@@ -260,19 +247,19 @@ export default function Home({ setActiveSection }) {
 
   const handleImageClick = (index) => {
     setSelectedImageIndex(index);
+    setCurrentImageIndex(0); // Start with the first image in the array
   };
 
   const handleClosePopup = () => {
     setSelectedImageIndex(null);
+    setCurrentImageIndex(0);
   };
 
   const handleSwipe = (direction) => {
     if (selectedImageIndex !== null) {
-      const graphicData = portfolioData.graphic;
-      const newIndex = selectedImageIndex + direction;
-      if (newIndex >= 0 && newIndex < graphicData.length) {
-        setSelectedImageIndex(newIndex);
-      }
+      const currentImages = portfolioData.graphic[selectedImageIndex].images;
+      const newIndex = (currentImageIndex + direction + currentImages.length) % currentImages.length;
+      setCurrentImageIndex(newIndex);
     }
   };
 
@@ -287,7 +274,7 @@ export default function Home({ setActiveSection }) {
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, currentImageIndex]);
 
   return (
     <div className="px-6">
@@ -303,7 +290,7 @@ export default function Home({ setActiveSection }) {
           <h1 className="text-4xl md:text-5xl font-bold mb-2 md:mb-4">Frontend Developer</h1>
           <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">UI/UX and Graphic Designer</h2>
           <p className="text-base md:text-lg mb-4 md:mb-6">
-            {`{ JavaScript, React, Next.js, Rails, MongoDB, CSS, Sass ... }`}
+            {`{ JavaScript, React, Next.js, Rails, TailwindCSS... }`}
           </p>
           <p className="text-sm md:text-md max-w-md mb-6 md:mb-8">
             Specializing in React & Next.js I leverage cutting-edge technologies to bring web projects to life.
@@ -362,10 +349,10 @@ export default function Home({ setActiveSection }) {
         <p className="mt-4 text-lg leading-relaxed">
           I hold a degree in Urban and Regional Planning from the Federal University of Technology, Minna. Driven by a growing passion for technology, I have since earned certifications in <strong>Frontend Development</strong>, <strong>Software Engineering</strong>, <strong>Graphic Design</strong>, and <strong>UI/UX Design</strong>.
         </p>
-      </section >
+      </section>
 
-    {/* Portfolio Section */ }
-    < section id = "portfolio" className = "min-h-screen py-25 max-w-7xl mx-auto" >
+      {/* Portfolio Section */}
+      <section id="portfolio" className="min-h-screen py-25 max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold mb-2 text-center">Portfolio Projects</h1>
         <h2 className="text-[15px] font-normal mb-6 text-center">From Frontend dev to website & graphic designs</h2>
         <div className="flex justify-center mb-8">
@@ -418,51 +405,47 @@ export default function Home({ setActiveSection }) {
             </div>
           ))}
         </div>
-  {
-    portfolioData[activeCategory].length > (window.innerWidth >= 1024 ? 3 : 4) && !showMore && (
-      <div className="text-center mt-8">
-        <button
-          onClick={() => setShowMore(true)}
-          className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500"
-        >
-          See More
-        </button>
-      </div>
-    )
-  }
-  {
-    selectedImageIndex !== null && activeCategory === 'graphic' && (
-      <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-        <button
-          className="absolute top-4 right-4 text-white text-2xl"
-          onClick={handleClosePopup}
-        >
-          &times;
-        </button>
-        <button
-          className="absolute left-4 text-white text-4xl"
-          onClick={() => handleSwipe(-1)}
-        >
-          &#10094;
-        </button>
-        <img
-          src={portfolioData.graphic[selectedImageIndex].images[0]}
-          alt={portfolioData.graphic[selectedImageIndex].title}
-          className="max-w-full max-h-full"
-        />
-        <button
-          className="absolute right-4 text-white text-4xl"
-          onClick={() => handleSwipe(1)}
-        >
-          &#10095;
-        </button>
-      </div>
-    )
-  }
-      </section >
+        {portfolioData[activeCategory].length > (window.innerWidth >= 1024 ? 3 : 4) && !showMore && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowMore(true)}
+              className="px-6 py-3 bg-blue-700 rounded-full text-white hover:bg-orange-500"
+            >
+              See More
+            </button>
+          </div>
+        )}
+        {selectedImageIndex !== null && activeCategory === 'graphic' && (
+          <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+            <button
+              className="absolute top-4 right-4 text-white text-2xl"
+              onClick={handleClosePopup}
+            >
+              &times;
+            </button>
+            <button
+              className="absolute left-4 text-white text-4xl"
+              onClick={() => handleSwipe(-1)}
+            >
+              &#10094;
+            </button>
+            <img
+              src={portfolioData.graphic[selectedImageIndex].images[currentImageIndex]}
+              alt={portfolioData.graphic[selectedImageIndex].title}
+              className="max-w-full max-h-full"
+            />
+            <button
+              className="absolute right-4 text-white text-4xl"
+              onClick={() => handleSwipe(1)}
+            >
+              &#10095;
+            </button>
+          </div>
+        )}
+      </section>
 
-    {/* Contact Section */ }
-    < section id = "contact" className = "min-h-screen py-25 max-w-xl mx-auto text-center" >
+      {/* Contact Section */}
+      <section id="contact" className="min-h-screen py-25 max-w-xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Get in touch</h2>
         <p className="mb-4">I'm always interested in exploring new opportunities, collaborating, or exchanging ideas with like-minded individuals. Feel free to book a call or email me if you'd like to see my portfolio deck or to discuss a potential project.</p>
         <form className="space-y-4">
@@ -478,7 +461,7 @@ export default function Home({ setActiveSection }) {
           <a href="https://linkedin.com/in/aliyu-aminu-adavatu" target="_blank" rel="noopener noreferrer"><img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6" /></a>
           <a href="https://x.com/AliyuAminu_dev" target="_blank" rel="noopener noreferrer"><img src="/x.png" alt="X" className="w-6 h-6" /></a>
         </div>
-      </section >
-    </div >
+      </section>
+    </div>
   );
 }

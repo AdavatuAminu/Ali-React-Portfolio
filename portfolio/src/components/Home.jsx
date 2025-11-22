@@ -148,11 +148,11 @@ export default function Home({ setActiveSection }) {
         githubLink: "https://github.com/AdavatuAminu/ReactJS-calculator"
       },
       {
-        title: "My Dropbox App",
-        description: "Dropbox-clone app using React & AWS backend.",
-        image: "/frontend/front7.jpg",
-        liveLink: "https://my-dropbox-beryl.vercel.app",
-        githubLink: "https://github.com/AdavatuAminu/dropbox-clone"
+        title: "Rendezvous",
+        description: "Events and services",
+        image: "/frontend/front7.JPG",
+        liveLink: "https://rendezvous-blond.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/rendezvous"
       },
       {
         title: "My Instagram App",
@@ -160,6 +160,13 @@ export default function Home({ setActiveSection }) {
         image: "/frontend/front8.jpg",
         liveLink: "https://my-instagram-henna.vercel.app",
         githubLink: "https://github.com/AdavatuAminu/Instagram-clone"
+      },
+      {
+        title: "GetChange",
+        description: "Financial service App",
+        image: "/frontend/front9.JPG",
+        liveLink: "https://get-change-phi.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/GetChange"
       },
     ],
     uiux: [

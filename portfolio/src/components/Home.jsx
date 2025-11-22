@@ -311,7 +311,7 @@ export default function Home({ setActiveSection }) {
               See my dev work
             </button>
             <a
-              href="/AliyuAminuAdavatuCV.pdf"
+              href="/Aliyu-Aminu-Adavatu-CV-20251029.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 sm:px-6 sm:py-3 text-blue-500 text-sm sm:text-base hover:underline"

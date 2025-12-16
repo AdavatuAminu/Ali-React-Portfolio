@@ -127,11 +127,26 @@ export default function Home({ setActiveSection }) {
         githubLink: "https://github.com/AdavatuAminu/Breez-ecommerce"
       },
       {
-        title: "AI Job Match dashboard",
-        description: "Automatic job AI job search website.",
-        image: "/frontend/front4.jpg",
-        liveLink: "https://ai-powered-job-match-dashboard-swart.vercel.app",
-        githubLink: "https://github.com/AdavatuAminu/AI-Powered-Job-Match-Dashboard"
+        title: "Exclusive E-commerce",
+        description: "Vue + Tailwind powered storefront with product details and cart features.",
+        image: "/frontend/Exclusive.JPG",
+        liveLink: "https://exclusive-beta-ruby.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/Exclusive-E-commerce"
+      },
+      
+      {
+        title: "Rendezvous",
+        description: "Events and services",
+        image: "/frontend/front7.JPG",
+        liveLink: "https://rendezvous-blond.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/rendezvous"
+      },
+      {
+        title: "GetChange",
+        description: "Financial service App",
+        image: "/frontend/front9.JPG",
+        liveLink: "https://get-change-phi.vercel.app/",
+        githubLink: "https://github.com/AdavatuAminu/GetChange"
       },
       {
         title: "Pokemon App",
@@ -148,25 +163,19 @@ export default function Home({ setActiveSection }) {
         githubLink: "https://github.com/AdavatuAminu/ReactJS-calculator"
       },
       {
-        title: "Rendezvous",
-        description: "Events and services",
-        image: "/frontend/front7.JPG",
-        liveLink: "https://rendezvous-blond.vercel.app/",
-        githubLink: "https://github.com/AdavatuAminu/rendezvous"
-      },
-      {
         title: "My Instagram App",
         description: "Insagram-clone app using React & AWS backend.",
         image: "/frontend/front8.jpg",
         liveLink: "https://my-instagram-henna.vercel.app",
         githubLink: "https://github.com/AdavatuAminu/Instagram-clone"
       },
+      
       {
-        title: "GetChange",
-        description: "Financial service App",
-        image: "/frontend/front9.JPG",
-        liveLink: "https://get-change-phi.vercel.app/",
-        githubLink: "https://github.com/AdavatuAminu/GetChange"
+        title: "AI Job Match dashboard",
+        description: "Automatic job AI job search website.",
+        image: "/frontend/front4.jpg",
+        liveLink: "https://ai-powered-job-match-dashboard-swart.vercel.app",
+        githubLink: "https://github.com/AdavatuAminu/AI-Powered-Job-Match-Dashboard"
       },
     ],
     uiux: [
